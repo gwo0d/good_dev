@@ -1,0 +1,125 @@
+:root {
+    --font-family-heading: "Poppins", sans-serif;
+    --font-family-paragraph: Helvetica, sans-serif;
+    --font-family-mono: monospace;
+    --base-color: #ffffff;
+    --base-offset-color: #eaeaea;
+    --highlight-color: #13bb5b;
+    --heading-color: #1c1b1d;
+    --text-color: #4e5157;
+}
+
+body {
+    padding: 50px;
+    background: var(--base-color);
+    font-family: var(--font-family-paragraph);
+    box-sizing: border-box;
+    color: var(--text-color);
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: var(--font-family-paragraph);
+    color: var(--text-color);
+    font-size: 18px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--heading-color);
+    font-family: var(--font-family-heading);
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+body.frame {
+    min-height: 100vh;
+    border: 18px solid var(--highlight-color);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.author {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--heading-color);
+    font-size: 20px;
+}
+
+.author .author-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.author .author-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid var(--heading-color);
+}
+
+.intro {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.intro h1 {
+    width: 80%;
+    font-size: 88px;
+    line-height: 94px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.intro p {
+    width: 80%;
+    font-size: 22px;
+    line-height: 32px;
+    padding-top: 0px;
+}
+
+.dot {
+    color: var(--highlight-color);
+}
+
+.footer {
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.social-icon {
+    margin-right: 10px;
+}
