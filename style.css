@@ -7,6 +7,7 @@
     --highlight-color: #f7c931;
     --heading-color: #1c1b1d;
     --text-color: #4e5157;
+    --border-width: 18px;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
     font-family: var(--font-family-paragraph);
     box-sizing: border-box;
     color: var(--text-color);
-    margin: 18px auto;
+    margin: var(--border-width) auto;
     overflow: scroll;
     min-width: 350px;
 }
@@ -44,8 +45,8 @@ a {
 }
 
 body.frame {
-    min-height: 100vh;
-    border: 18px solid var(--highlight-color);
+    min-height: calc(100vh - var(--border-width));
+    border: var(--border-width) solid var(--highlight-color);
 }
 
 .wrapper {
@@ -138,4 +139,42 @@ body.frame {
 
 .social-icon {
     margin-right: 10px;
+}
+
+.error-page {
+    --highlight-color: #ff0000;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (min-width: 767px) {
+    .error-page h1 {
+        width: 100%;
+        font-size: 88px;
+        line-height: 94px;
+        margin-bottom: 50px;
+    }
+}
+
+.error-page p {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+}
+
+@media (min-width: 767px) {
+    .error-page p {
+        width: 100%;
+        font-size: 22px;
+        line-height: 32px;
+    }
 }
