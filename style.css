@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
     color: var(--text-color);
     margin: var(--border-width) auto;
-    overflow: auto;
+    overflow: scroll;
     min-width: 350px;
 }
 
