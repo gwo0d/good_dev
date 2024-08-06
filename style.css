@@ -50,6 +50,7 @@ body.frame {
 
 .wrapper {
     max-width: 1000px;
+    margin: 0px auto;
 }
 
 .poppins-regular {
