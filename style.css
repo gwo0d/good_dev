@@ -17,6 +17,8 @@ body {
     box-sizing: border-box;
     color: var(--text-color);
     margin: var(--border-width) auto;
+    margin-top: 0;
+    margin-bottom: 0;
     overflow: scroll;
     min-width: 350px;
 }
@@ -45,7 +47,7 @@ a {
 }
 
 body.frame {
-    min-height: calc(100vh - var(--border-width));
+    min-height: 100vh;
     border: var(--border-width) solid var(--highlight-color);
 }
 
